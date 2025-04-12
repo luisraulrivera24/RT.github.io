@@ -19,9 +19,9 @@ Fonts are separated by a & */
 }
 
 body {
-  max-width: 80%;
+  max-width: 100%;
   background-color: #ACBFA4;
-  margin: 0 auto;
+  margin: 0% 8% 8% 8%;
   padding: 0;
   font-size: 1em; /* Increased text to enable scrolling */
 }
@@ -660,3 +660,111 @@ button {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 } */
+
+/* ############################## Mobile Layout ############################## */
+@media screen and (max-width: 768px) {
+  /* Adjust grid layout for smaller screens */
+  header #header-grid {
+    grid-template-columns: 1fr; /* One column for mobile */
+  }
+
+  header h1 {
+    font-size: 2em; /* Smaller font size */
+    text-align: center;
+    grid-column: 1;
+  }
+
+  .book {
+    padding: 4%; /* Smaller padding */
+    margin: 0 auto;
+  }
+
+  .sidenav {
+    width: 100%;
+    line-height: 2em; /* Adjust for smaller screens */
+  }
+
+  /* Change grid layout for mobile in section 1 */
+  #home-1-main {
+    grid-template-columns: 1fr; /* One column */
+  }
+
+  #home-2-main {
+    grid-template-columns: 1fr; /* One column */
+  }
+
+  .first-home .first-section {
+    padding: 10%; /* More padding */
+  }
+
+  .first-home {
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+
+  .first-home .first-section .book {
+    margin-top: 20px;
+  }
+
+  footer #footer-grid {
+    grid-template-columns: 1fr; /* Stack footer content */
+  }
+
+  footer #footer-grid .address,
+  footer #footer-grid .follow-us,
+  footer #footer-grid .social-home {
+    text-align: center;
+  }
+
+  .contact-1 {
+    grid-template-columns: 1fr; /* One column */
+  }
+
+  /* Adjust the form for mobile */
+  form {
+    width: 100%; /* Full width */
+    margin-top: 20%;
+  }
+
+  /* Adjust input fields for mobile */
+  input, textarea {
+    width: 90%; /* Full width for input */
+  }
+
+  .button-box-3-tp {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  /* Adjust slideshow for mobile */
+  .slideshow-container {
+    width: 100%; /* Full width */
+  }
+}
+
+/* ############################## Very Small Mobile Screens ############################## */
+@media screen and (max-width: 480px) {
+  /* Reduce font size for smaller screens */
+  header h1 {
+    font-size: 1.5em;
+  }
+
+  .first-home .first-section {
+    padding: 5%; /* Less padding */
+  }
+
+  .first-home .first-section .book {
+    font-size: 1em;
+    padding: 5%;
+  }
+
+  .sidenav {
+    line-height: 2em;
+  }
+
+  /* Adjust button sizes for smaller screens */
+  .button-box-3-tp .book {
+    font-size: 20px;
+    padding: 12px 24px;
+  }
+}
