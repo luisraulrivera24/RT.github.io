@@ -19,12 +19,11 @@ Fonts are separated by a & */
 }
 
 body {
-  max-width: 1600px;
+  max-width: 80%;
   background-color: #ACBFA4;
   margin: 0 auto;
   padding: 0;
-  font-size: 1.5em; /* Increased text to enable scrolling */
-  padding: 0px 10px;
+  font-size: 1em; /* Increased text to enable scrolling */
 }
 
 /* ############################## This is code for the font types ##############################*/
@@ -443,14 +442,14 @@ footer #footer-grid .follow-us {
   border-right: 4px solid #5F0F40;
 }
 
-.image-price-1 .trailer-1, .image-price-2 .truck-trailer-1, .image-price-3 .truck-trailer-2 {
-  height: 65%;
-  width: 130%;
+.image-price-1 .trailer-1, .image-price-2 .truck-trailer-1, .image-price-3 .truck-trailer-2, .image-price-4 .truck-trailer-3 {
+  height: 100%;
+  width: 90%;
 }
 
 .image-price-1 p, .image-price-2 p, .image-price-3 p {
   border: 4px solid #5F0F40;
-  width: 130%;
+  width: 100%;
 }
 
 .header-tp {
@@ -463,24 +462,6 @@ footer #footer-grid .follow-us {
   margin-bottom: 8%;
 }
 
-.button-box-1-tp {
-  grid-column: 3/6;
-  grid-row: 2/3;
-  align-self: end;
-  justify-self: center;
-  padding-right: 15%;
-  padding-bottom: 5%;
-}
-
-.button-box-2-tp {
-  grid-column: 6/9;
-  grid-row: 2/3;
-  align-self: end;
-  justify-self: center;
-  padding-right: 15%;
-  padding-bottom: 5%;
-}
-
 .button-box-3-tp {
   grid-column: 4/8;
   grid-row: 4/5;
@@ -491,83 +472,65 @@ footer #footer-grid .follow-us {
   padding-bottom: 5%;
 }
 
-.button-box-1-tp .book, .button-box-2-tp .book, .button-box-3-tp .book {
+.button-box-3-tp .book {
   background-color: #FF8C00;
   color: #dbe5d7;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 25px;
   padding: 15px 30px;
-  margin-top: 50px;
+  margin-top: 10%;
   border-radius: 5px;
   box-shadow: 5px 5px 10px 10px #686b5f;
 }
 
-.image-price-1 {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  grid-column: 3/5;
-  grid-row: 2/3;
+.button-box-3-tp {
+  grid-column: 3 / 7; /* or 2 / 8 for full width */
+  grid-row: 4 / 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0 0 3em;
 }
 
-.book-1-tp {
-  text-align: center;
-  grid-column: 3/5;
+.image-price-1 {
+  text-align: right;
+  grid-column: 2/5;
   grid-row: 2/3;
-  text-decoration: none;
-  background-color: #FF8C00;
-  color: white;
-  padding: 5%;
-  border-radius: 5px;
+  padding-left: 5%;
 }
 
 .image-price-2 {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  grid-column: 6/8;
+  text-align: right;
+  grid-column: 5/8;
   grid-row: 2/3;
-}
-
-.book-2-tp {
-  text-align: center;
-  grid-column: 6/8;
-  grid-row: 2/3;
-  text-decoration: none;
-  background-color: #FF8C00;
-  color: white;
-  padding: 5%;
-  border-radius: 5px;
 }
 
 .image-price-3 {
-  width: 100%;
-  height: 110%;
   margin-top: 10%;
-  text-align: center;
-  grid-column: 4/7;
-  grid-row: 3/4;
+  text-align: right;
+  grid-column: 2/5;
+  grid-row: 3/3;
+  padding-left: 5%;
 }
 
-.book-3-tp {
-  text-align: center;
-  grid-column: 4/7;
-  grid-row: 3/4;
-  text-decoration: none;
-  background-color: #FF8C00;
-  color: white;
-  padding: 5%;
-  border-radius: 5px;
+.image-price-4 {
+  width: 105%;
+  margin-top: 10%;
+  text-align: right;
+  grid-column: 5/8;
+  grid-row: 3/3;
+  padding-right: 5%;
 }
 
 .paragraph-tp {
   margin-top: 8%;
   margin-bottom: 8%;
+  text-align: left;
   line-height: 1.75em;
-  grid-column: 4/8;
+  grid-column: 3/8;
 }
 
-.image-price-1 p, .image-price-2 p, .image-price-3 p, .trailer-1, .truck-trailer-1, .truck-trailer-2 {
+.image-price-1 p, .image-price-2 p, .image-price-3 p, .trailer-1, .truck-trailer-1, .truck-trailer-2, .truck-trailer-3 {
   box-shadow: 5px 5px 10px 10px #686b5f;
 }
 /* ############################## This is the code for section 2 of the trailers and prices page  ############################## */
@@ -590,8 +553,9 @@ footer #footer-grid .follow-us {
 .paragraph-2-tp {
   margin-top: 8%;
   margin-bottom: 8%;
+  text-align: left;
   line-height: 1.75em;
-  grid-column: 4/8;
+  grid-column: 3/8;
 }
 
 /* ############################## This is the code for the contact page ############################## */
